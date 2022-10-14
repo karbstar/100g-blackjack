@@ -14,11 +14,12 @@ def busts(score):
   True : user busts if the score is over 21
   False : user does not bust becuase score is 21 or less
   '''
+  print('y')
   bust=True
   if score<=21:
     bust=False
   return bust
-
+  
 
 def main():
   assert busts(22) == True
