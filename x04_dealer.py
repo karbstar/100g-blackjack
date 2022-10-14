@@ -23,7 +23,11 @@ def dealer(deck):
   You may need to use the function in problem 2 to count the score
   it will then return a list
   '''
-  
+  x=-1
+  while score<16:
+    x=x+1
+    dealer.append(deck[x])
+    deck.remove(x)
   return [ dealer , score , deck ]
 
 def main():
